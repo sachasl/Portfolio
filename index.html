@@ -5,14 +5,15 @@
     <title>Sacha's Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of Sacha Loi, a Computer Science student at the University of Warwick, showcasing software projects, technical skills, and contact details.">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top">
@@ -43,13 +44,13 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/sachasl" target="_blank">
+                    <a class="nav-link" href="https://github.com/sachasl" target="_blank" rel="noopener">
                         <i class="bi bi-github me-1"></i>GitHub
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.linkedin.com/in/sacha-loi-23338b31a/" target="_blank">
+                    <a class="nav-link" href="https://www.linkedin.com/in/sacha-loi-23338b31a/" target="_blank" rel="noopener">
                         <i class="bi bi-linkedin me-1"></i>LinkedIn
                     </a>
                 </li>
@@ -64,20 +65,16 @@
     <div class="container">
         <h1 class="display-4">Hello, I'm Sacha 👋</h1>
         <p class="lead">
-            Computer Science student at the University of Warwick with an interest in software development,
-            programming, and building practical projects.
+            Computer Science student at the University of Warwick, building projects and looking
+            for my first software engineering internship.
         </p>
 
-        <a href="https://github.com/sachasl" class="btn btn-dark me-2" target="_blank">
-            <i class="bi bi-github"></i> View GitHub
+        <a href="#projects" class="btn btn-dark me-2">
+            View My Projects
         </a>
 
-        <a href="https://www.linkedin.com/in/sacha-loi-23338b31a/" class="btn btn-primary me-2" target="_blank">
-            <i class="bi bi-linkedin"></i> View LinkedIn
-        </a>
-
-        <a href="mailto:Sacha.Loi@warwick.ac.uk" class="btn btn-outline-primary">
-            Contact Me
+        <a href="#contact" class="btn btn-outline-primary">
+            Get In Touch
         </a>
     </div>
 </section>
@@ -88,13 +85,15 @@
         <h2 class="mb-4">About Me</h2>
 
         <p>
-            I am a Computer Science student at the University of Warwick with an interest in software development,
-            problem solving, and learning new technologies through practical projects.
+            I'm particularly interested in how software can be built to be both efficient and reliable,
+            and I enjoy the process of taking a problem apart, figuring out the logic behind it, and
+            building something that actually works. Outside of coursework, I like exploring new
+            languages and frameworks through small self-directed projects rather than just tutorials.
         </p>
 
         <p>
-            This portfolio showcases some of the projects I have created and provides links to my GitHub,
-            LinkedIn, and contact details.
+            This portfolio brings together the projects I've built, the technologies I've picked up
+            along the way, and the easiest way to reach me if you'd like to chat.
         </p>
     </div>
 </section>
@@ -104,16 +103,22 @@
     <div class="container">
         <h2 class="mb-4">Skills</h2>
 
-        <div class="d-flex flex-wrap gap-2">
-            <span class="badge bg-primary">HTML</span>
-            <span class="badge bg-secondary">CSS</span>
-            <span class="badge bg-success">JavaScript</span>
-            <span class="badge bg-dark">Python</span>
+        <h6 class="text-uppercase text-muted mb-2">Languages</h6>
+        <div class="d-flex flex-wrap gap-2 mb-4">
+            <span class="badge bg-primary">Python</span>
             <span class="badge bg-warning text-dark">Java</span>
             <span class="badge bg-info text-dark">C#</span>
+            <span class="badge bg-dark">JavaScript</span>
+            <span class="badge bg-secondary">HTML</span>
+            <span class="badge bg-secondary">CSS</span>
+        </div>
+
+        <h6 class="text-uppercase text-muted mb-2">Frameworks &amp; Tools</h6>
+        <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-success">Flask</span>
             <span class="badge bg-danger">Unity</span>
-            <span class="badge bg-secondary">Flask</span>
-            <span class="badge bg-primary">GitHub</span>
+            <span class="badge bg-primary">Bootstrap</span>
+            <span class="badge bg-dark">Git &amp; GitHub</span>
         </div>
     </div>
 </section>
@@ -129,12 +134,13 @@
             <div class="col-md-4">
                 <div class="card h-100 shadow-sm">
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">A Level Project</h5>
+                        <div class="fs-1 text-primary mb-2"><i class="bi bi-heart-pulse"></i></div>
+                        <h5 class="card-title">Fitness Website</h5>
                         <p class="card-text">
-                            Created a fitness website using HTML, CSS, and JavaScript for the front end,
-                            with a Python backend using Flask and Jinja.
+                            An A-Level project: a fitness website with an HTML, CSS, and JavaScript
+                            front end backed by a Python/Flask and Jinja server.
                         </p>
-                        <a href="https://github.com/sachasl/Fitness-Website" class="btn btn-outline-dark" target="_blank">View Project</a>
+                        <a href="https://github.com/sachasl/Fitness-Website" class="btn btn-outline-dark mt-auto" target="_blank" rel="noopener">View Project</a>
                     </div>
                 </div>
             </div>
@@ -142,12 +148,13 @@
             <div class="col-md-4">
                 <div class="card h-100 shadow-sm">
                     <div class="card-body d-flex flex-column">
+                        <div class="fs-1 text-primary mb-2"><i class="bi bi-controller"></i></div>
                         <h5 class="card-title">Flappy Bird Replica</h5>
                         <p class="card-text">
-                            Developed a Flappy Bird replica in Unity using C#, including player movement,
+                            A Flappy Bird replica built in Unity with C#, including player movement,
                             collision detection, and scoring mechanics.
                         </p>
-                        <a href="https://github.com/sachasl/FlappyBirdUnity" class="btn btn-outline-dark mt-auto" target="_blank">View Project</a>
+                        <a href="https://github.com/sachasl/FlappyBirdUnity" class="btn btn-outline-dark mt-auto" target="_blank" rel="noopener">View Project</a>
                     </div>
                 </div>
             </div>
@@ -155,12 +162,13 @@
             <div class="col-md-4">
                 <div class="card h-100 shadow-sm">
                     <div class="card-body d-flex flex-column">
+                        <div class="fs-1 text-primary mb-2"><i class="bi bi-signpost-split"></i></div>
                         <h5 class="card-title">Robot Maze</h5>
                         <p class="card-text">
-                            Created a Java program to help a robot learn how to traverse a maze efficiently
+                            A Java program that helps a robot learn to traverse a maze efficiently
                             using optimal movement logic.
                         </p>
-                        <a href="https://github.com/sachasl" class="btn btn-outline-dark mt-auto" target="_blank">View Project</a>
+                        <button class="btn btn-outline-secondary mt-auto" disabled>Repo Coming Soon</button>
                     </div>
                 </div>
             </div>
@@ -175,9 +183,11 @@
     <div class="container">
         <h2 class="mb-4">CV</h2>
         <p>
-            I am continuing to develop my CV alongside my portfolio, LinkedIn, and GitHub to build a professional online presence.
+            A full breakdown of my education, work experience, and technical skills.
         </p>
-        <a href="Sachasl_CV.pdf" class="btn btn-outline-primary" target="_blank">View CV</a>
+        <a href="Sachasl_CV.pdf" class="btn btn-outline-primary" target="_blank">
+            <i class="bi bi-file-earmark-person me-1"></i>Download CV
+        </a>
     </div>
 </section>
 
@@ -187,8 +197,8 @@
         <h2 class="mb-4">Contact</h2>
 
         <p><i class="bi bi-envelope-fill me-2"></i><a href="mailto:Sacha.Loi@warwick.ac.uk">Sacha.Loi@warwick.ac.uk</a></p>
-        <p><i class="bi bi-github me-2"></i><a href="https://github.com/sachasl" target="_blank">github.com/sachasl</a></p>
-        <p><i class="bi bi-linkedin me-2"></i><a href="https://www.linkedin.com/in/sacha-loi-23338b31a/" target="_blank">LinkedIn Profile</a></p>
+        <p><i class="bi bi-github me-2"></i><a href="https://github.com/sachasl" target="_blank" rel="noopener">github.com/sachasl</a></p>
+        <p><i class="bi bi-linkedin me-2"></i><a href="https://www.linkedin.com/in/sacha-loi-23338b31a/" target="_blank" rel="noopener">LinkedIn Profile</a></p>
     </div>
 </section>
 
@@ -198,6 +208,8 @@
         <p class="mb-0">© 2026 Sacha Loi</p>
     </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
